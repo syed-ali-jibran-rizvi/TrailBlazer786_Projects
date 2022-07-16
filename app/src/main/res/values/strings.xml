@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TrailBlazer786</string>
+    <string name="EMAIL">EMAIL</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="forgotpass">FORGOT PASSWORD?</string>
+    <string name="NEWUSER">NEW USER?</string>
+    <string name="credits">DEVELOPED BY TRAILBLAZER786</string>
+    <string name="CREATEnewACC">CREATE A NEW ACCOUNT</string>
+    <string name="learnregister">REGISTER NOW!!!</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="PP">PERSONAL</string>
+    <string name="FS">FILE SECTION</string>
+    <string name="VL">VDO. LECTURES</string>
+    <string name="vc">VIDEO CALL</string>
+    <string name="tt">TIMETABLE</string>
+    <string name="sim">SIMULATIONS</string>
+    <string name="test">TESTS</string>
+    <string name="jj">Hmm.. Studying??</string>
+    <string name="title_activity_5">activity5</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="VC">VIDEO CALL</string>
+    <string name="parhega">Parhega</string>
+    <string name="india">INDIA</string>
+    <string name="parhegahindi">पढ़ेगा</string>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="395dp"
+        android:layout_height="782dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/newregisterbg" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="246dp"
+        android:layout_height="195dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="RegisterAnimation.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:text="@string/learnregister"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/FULLNAME"
+        android:layout_width="289dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittextborder"
+        android:backgroundTint="#7Ff1a8d5"
+        android:gravity="center"
+        android:hint="FULL NAME"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#5A000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/EMAIL"
+        android:layout_width="289dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextborder"
+        android:backgroundTint="#7Ff1a8d5"
+        android:gravity="center"
+        android:hint="@string/EMAIL"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#5A000000"
+        app:layout_constraintEnd_toEndOf="@+id/FULLNAME"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/FULLNAME"
+        app:layout_constraintTop_toBottomOf="@+id/FULLNAME" />
+
+    <EditText
+        android:id="@+id/PASSWORD"
+        android:layout_width="289dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextborder"
+        android:backgroundTint="#7Ff1a8d5"
+        android:gravity="center"
+        android:hint="@string/PASSWORD"
+        android:inputType="textPassword"
+        android:textColorHint="#5A000000"
+        app:layout_constraintEnd_toEndOf="@+id/EMAIL"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/EMAIL"
+        app:layout_constraintTop_toBottomOf="@+id/EMAIL" />
+
+    <EditText
+        android:id="@+id/INSTITUTE"
+        android:layout_width="289dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextborder"
+        android:backgroundTint="#7Ff1a8d5"
+        android:gravity="center"
+        android:hint="INSTITUTE"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/PASSWORD"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/PASSWORD"
+        app:layout_constraintTop_toBottomOf="@+id/PASSWORD" />
+
+    <EditText
+        android:id="@+id/Profession"
+        android:layout_width="289dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextborder"
+        android:backgroundTint="#7Ff1a8d5"
+        android:gravity="center"
+        android:hint="STUDENT/TEACHER"
+        android:inputType="textPassword"
+        android:textColorHint="#5A000000"
+        app:layout_constraintEnd_toEndOf="@+id/INSTITUTE"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/INSTITUTE"
+        app:layout_constraintTop_toBottomOf="@+id/INSTITUTE"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="282dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextborder"
+        android:onClick="login"
+        android:text="REGISTER"
+        app:layout_constraintEnd_toEndOf="@+id/Profession"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/Profession"
+        app:layout_constraintTop_toBottomOf="@+id/Profession" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
